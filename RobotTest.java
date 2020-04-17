@@ -5,7 +5,7 @@
  * @author (2018315034 정철우, 2018315038 이혜인) 
  * @version (2020/04/10)
  */
-public class RobotTest extends Robot
+public class RobotTest 
 {
     public static void main(String[] args){
         new Robot("yellow", 5.0);

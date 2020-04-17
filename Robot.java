@@ -9,10 +9,24 @@ public class Robot
 {
     String TL; //Traffic Light
     double sp = 5; //Speed
-
-    public Robot(String TL, double sp){
-        this.TL = TL; 
+    
+    public void setTL(String TL){
+        this.TL = TL;
+    }
+    public String getTL(){
+        return this.TL;
+    }
+    
+    public void setsp(double sp){
         this.sp = sp;
+    }
+    public double getsp(){
+        return this.sp;
+    }
+    
+    public Robot(String TL, double sp){
+        setTL(TL);
+        setsp(sp);
         RobotWalk();
     }
     
