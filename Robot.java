@@ -24,23 +24,21 @@ public class Robot
         return this.sp;
     }
     
+    public Robot(String TL, double sp){
+        setTL(TL);
+        setsp(sp);
+        RobotWalk();
+    }
+    
     public void RobotWalk(){
-        if(TL == "green"){
+        if(getTL() == "green"){
         }
-        else if(TL == "yellow"){
+        else if(getTL() == "yellow"){
             sp = sp * 1.2;
         }
         else{
             sp = 0;
         }
-        System.out.println("속도: " + (int)sp + "km/h");
-    } 
-    
-    public Robot(String TL, double sp){
-        //setTL(TL);
-        //setsp(sp);
-        //RobotWalk();
-    }
-    
-       
+        System.out.println("속도: " + (int)getsp() + "km/h");
+    }   
 }
