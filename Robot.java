@@ -24,12 +24,6 @@ public class Robot
         return this.sp;
     }
     
-    public Robot(String TL, double sp){
-        setTL(TL);
-        setsp(sp);
-        RobotWalk();
-    }
-    
     public void RobotWalk(){
         if(TL == "green"){
         }
@@ -40,5 +34,13 @@ public class Robot
             sp = 0;
         }
         System.out.println("속도: " + (int)sp + "km/h");
-    }    
+    } 
+    
+    public Robot(String TL, double sp){
+        //setTL(TL);
+        //setsp(sp);
+        //RobotWalk();
+    }
+    
+       
 }
