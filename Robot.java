@@ -7,33 +7,10 @@
  */
 public class Robot
 {
-    String TL; //Traffic Light
-    double sp = 5; //Speed
-    
-    public void setTL(String TL){
-        this.TL = TL;
-    }
-    public String getTL(){
-        return this.TL;
-    }
-    
-    public void setsp(double sp){
-        this.sp = sp;
-    }
-    public double getsp(){
-        return this.sp;
-    }
-    
-    public Robot(String TL, double sp){
-        setTL(TL);
-        setsp(sp);
-        RobotWalk();
-    }
-    
-    public void RobotWalk(){
-        if(getTL() == "green"){
+    public void RobotWalk(String TL,double sp){
+        if(TL == "green"){
         }
-        else if(getTL() == "yellow"){
+        else if(TL == "yellow"){
             sp = sp * 1.2;
         }
         else{
