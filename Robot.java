@@ -39,6 +39,5 @@ public class Robot
         else{
             sp = 0;
         }
-        System.out.println("속도: " + (int)getsp() + "km/h");
     }   
 }
