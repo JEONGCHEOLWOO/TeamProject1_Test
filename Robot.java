@@ -7,14 +7,15 @@
  */
 public class Robot
 {
-    public void RobotWalk(String TL,double sp){
+    public double RobotWalk(String TL,double sp){
         if(TL == "green"){
+            return sp;
         }
         else if(TL == "yellow"){
-            sp = sp * 1.2;
+            return sp = sp * 1.2;
         }
         else{
-            sp = 0;
+            return 0;
         }
     }   
 }

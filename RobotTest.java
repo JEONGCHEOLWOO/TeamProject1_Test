@@ -41,11 +41,10 @@ public class RobotTest
     }
 
     @Test
-    public void ErrorTest()
+    public void fds()
     {
-        Robot robot2 = new Robot("TrafficLight", 6.00);
-        robot2.setTL("Test Error");
-        assertSame("ErrorTest", robot2.getTL());
+        Robot robot1 = new Robot();
+        assertEquals(0.0, robot1.RobotWalk("red", 5.0), 0.0);
     }
 }
 
